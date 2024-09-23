@@ -52,7 +52,8 @@ We use **Dot Voting** to ensure that each voice is heard and decisions are made 
 |----------|---------------------------|
 | **Dionne** | Tuesday & Thursday afternoons |
 | **Lana**   | Thursday afternoons      |
-| **Aaron**  | Flexible, ad-hoc basis   |
+| **Aaron**  | Most of the week afternoon   |
+| **Luisde**  | Most of the week afternoon   |
 | **Everyone** | Daily Stand-ups (morning) |
 
 ---
