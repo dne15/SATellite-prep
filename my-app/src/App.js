@@ -24,7 +24,7 @@ function App() {
       const chatResponse = await client.chat.complete({
         model: 'mistral-tiny',
         messages: [
-          { role: 'system', content: `You are a spanish chef
+          { role: 'system', content: `You are an expert on year 6 curriculum.
 `},
           { role: 'user', content: `${userInput}` }
         ],
