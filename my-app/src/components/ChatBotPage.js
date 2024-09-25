@@ -1,12 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Mistral } from '@mistralai/mistralai';
 
 const apiKey = process.env.REACT_APP_MISTRAL_API_KEY || 'Q9wYLD8kvpWmXkYdpeDYGjpwfEbvAxOV';
 const client = new Mistral({ apiKey: apiKey });
 
+// Function to parse query parameters
+const useQuery = () => {
+  return new URLSearchParams(useLocation().search);
+};
+
 function ChatBotPage() {
+  const query = useQuery();
+  const initialMessage = query.get('message') || '';
   const [response, setResponse] = useState("WELCOME TO SPACE COMPANION");
-  const [userInput, setUserInput] = useState("");
+  const [userInput, setUserInput] = useState(initialMessage);
 
   const handleChange = (event) => {
     setUserInput(event.target.value);
