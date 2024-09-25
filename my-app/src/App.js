@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
-
 import MissionControlPage from './components/MissionControlPage';
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
         {/* Fondo y texto */}
         <div className="Skyandtext">
           <Link to="/missioncontrol">
-            <img className="background" src="/public/background.png" alt="Sky background" />
+            <img className="background" src="/background.png" alt="Sky background" />
           </Link>
         </div>
 
