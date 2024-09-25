@@ -11,7 +11,7 @@ function App() {
         {/* Fondo y texto */}
         <div className="Skyandtext">
           <Link to="/missioncontrol">
-            <img className="background" src="/background.png" alt="Sky background" />
+            <img className="background" src="/public/background.png" alt="Sky background" />
           </Link>
         </div>
 
