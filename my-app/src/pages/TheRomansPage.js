@@ -30,7 +30,7 @@ function TheRomansPage() {
       </div>
       <div className="input-container">
         {/* Input field to enter a message */}
-        <input
+        <input className='inputButton'
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
@@ -39,7 +39,7 @@ function TheRomansPage() {
       </div>
         {/* Button to send the message to the chat bot */}
         <button className="submitButton" onClick={handleSendMessage}>Chat with StudyBuddy</button>
-        <img className='planetImage' width="200" src="/planet2.png" alt="planet" />
+        <img className='planetImage' width="300" src="/planet2.png" alt="planet" />
       
     </div>
   );

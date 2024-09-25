@@ -1,8 +1,9 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './App.css';
-import MissionControlPage from './pages/MissionControlPage';
-import TheRomansPage from './pages/TheRomansPage';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import "./App.css";
+import MissionControlPage from "./pages/MissionControlPage";
+import TheRomansPage from "./pages/TheRomansPage";
+import ChatBotPage from "./pages/ChatBotPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/missioncontrol" element={<MissionControlPage />} />
         <Route path="/theromanspage" element={<TheRomansPage />} />
+        <Route path="/chatbot" element={<ChatBotPage />} />
       </Routes>
     </Router>
   );
@@ -21,7 +23,11 @@ function HomePage() {
     <div className="container">
       <div className="Skyandtext">
         <Link to="/missioncontrol">
-          <img className="background" src="/background.png" alt="Sky background" />
+          <img
+            className="background"
+            src="/background.png"
+            alt="Sky background"
+          />
         </Link>
       </div>
 

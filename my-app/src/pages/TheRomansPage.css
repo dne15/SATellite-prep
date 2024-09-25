@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
+
 body {
   width: 100%; /* Ensure the element takes the full width */
   height: 100%; /* Ensure the element takes the full height of the viewport */    
@@ -20,19 +23,33 @@ body {
 }
 
 video {
-  height: 420px;
+  height: auto;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  width: 80%;
+  text-align: center;
 }
 
 h1 {
-  padding-top: 2em;
   font-weight: black;
-  font-family: "Orbitron", sans-serif
+  font-size: 2.5rem;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+  padding-top: 1em;
+
 }
 
-h1, p, .video-container, .input-container, .button-container {
-  padding: 1em;
+ .input-container, .button-container {
   width: 100%; /* Ensure the elements take up the full width */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  text-align: center;
+}
+.video-container {
+  padding-bottom: 0.5rem;
 }
 
 .input-container {
@@ -40,6 +57,16 @@ h1, p, .video-container, .input-container, .button-container {
   display: block;
   width: 100%; /* Make the container take up the full width */
   box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  padding-bottom: 0.8rem;
+}
+
+.inputButton {
+  width: 270px;
+  text-align: center;
+  height: 50px;
+  font-size: 1rem;
+  font-family: "Exo", sans-serif ;
+  
 }
 
 .submitButton {
@@ -50,12 +77,13 @@ h1, p, .video-container, .input-container, .button-container {
   background-color: #3B4898;
   border-radius: 3rem;
   padding: 0.8rem;
+  font-family: "Exo", sans-serif;
   
 }
 
 .planetImage {
   transform: rotate(35deg);
   position: absolute; /* Position the image absolutely */
-  left: -50px; /* Move the image 50px to the left of the viewport */
-  bottom: -100px; /* Move the image 50px below the viewport */
+  left: -150px; /* Move the image 50px to the left of the viewport */
+  bottom: -70px; /* Move the image 50px below the viewport */
 }
