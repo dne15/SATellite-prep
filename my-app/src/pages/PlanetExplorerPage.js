@@ -4,18 +4,18 @@ import './PlanetExplorerPage.css';
 function PlanetExplorerPage() {
   const navigate = useNavigate(); // Create a navigate function
   const handleRomansPlanetClick = () => {
-    navigate('/theromanspage');
-  }; 
-
+    setTimeout(() => {
+      navigate('/theromanspage');
+        }, 1000); // Delay navigation by 1 second (1000 milliseconds)
+  };
   const handleBackClick = () => {
     navigate(-1); // Go back to the previous page
   };
-
   return (
     <div className="planet-explorer-page">
       <div className="back-symbol" onClick={handleBackClick}>{'<'}</div>
       <h1 className="planet-title"> Planet Explorer</h1>
-      <img className="galaxy-background2" src="/romansbackground.png" alt="Galaxy" />
+      <img className="galaxy-background2" src="/main-space.png" alt="Galaxy" />
       <div className="planets-container">
         <img className="PlanetSubjects" src="/planets.png" alt="Galaxy" />
         <div className="romans-planet-container">
