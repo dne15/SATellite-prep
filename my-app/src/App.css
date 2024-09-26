@@ -6,7 +6,7 @@ html, body {
 }
 
 .appcontainer {
-  width: 100vw; /* El ancho de la imagen ocupará todo el ancho del viewport */
+  width: 100vw; 
   height: 100vh; /* Opcional: si quieres que ocupe todo el alto también */
   display: flex;
   justify-content: center;
