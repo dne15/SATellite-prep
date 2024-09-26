@@ -1,68 +1,76 @@
-.fullImage {
-  position: fixed; /* Fija la imagen en el fondo */
-  top: 0; /* Ajusta la posición superior */
-  left: 0; /* Ajusta la posición izquierda */
-  width: 100vw; /* Ancho del 100% de la vista */
-  height: 100vh; /* Alto del 100% de la vista */
-  object-fit: fill;
-}
-/* body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: "Orbitron", sans-serif;
-  background-color: #C0CADA;
-}
-.mission-control {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #C0CADA;
+.megacontainer {
+  position: relative;
   height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.ControlPannel {
   position: relative;
-  top: 8em;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 6000;
+  object-fit: cover; /* Asegura que la imagen de fondo cubra todo sin deformarse */
 }
-.header {
-  text-align: center;
-  z-index: 2;
-  color: #4D4E4E;
-  font-weight: bold;
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Ajusta este valor según lo que necesites */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-.window {
-  z-index: 2;
-}
-.button-text2 {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #2D2F31;
-  position: relative;
-  bottom: 2.5em;
-}
-.ControlArrow {
-  position: relative;
-  margin-left: 10px;
-  margin-right: 10px;
-  align-self: center;
-  justify-self: center;
-  top: 1em;
-}
-.ControlBackground{
+.sky {
   position: absolute;
-  object-fit: fill;
-  max-width: 90%;
-  padding: 1em;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  object-fit: cover; /* Mantiene la proporción */
 }
-.buttonsandletters{
-  position: relative;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  position: relative;
-  top: 8em;
-  scale: 0.9;
-  right: 2em;
+.mars {
+  position: absolute;
+  top: 15%; /* Ajusta la posición según lo necesites */
+  left: 9%; /* Ajusta la posición según lo necesites */
+  z-index: 4000;
+  width: 20vw; /* Ajusta el tamaño del planeta */
+  height: auto; /* Mantiene la proporción */
+  scale: 1.7;
+  animation: move-right 60s linear infinite; /* Animación de movimiento horizontal */
 }
-.buttonss{
-  align-self: center;
-  justify-self: center;
-} */
+.orangeplanet {
+  position: absolute;
+  top: 45%; /* Ajusta la posición según lo necesites */
+  left: 45%; /* Ajusta la posición según lo necesites */
+  z-index: 5000;
+  width: 15vw; /* Ajusta el tamaño del planeta */
+  height: auto; /* Mantiene la proporción */
+  scale: 7.0;
+  animation: move-right 60s linear infinite; /* Animación de movimiento horizontal */
+}
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10vw); /* Mueve el planeta hacia la izquierda */
+  }
+  100% {
+    transform: translateX(100vw); /* Mueve el planeta hacia la derecha */
+  }
+}
+.astronaut2 {
+  position: absolute;
+  top: 25%; /* Ajusta la posición según lo necesites */
+  left: 42%; /* Ajusta la posición según lo necesites */
+  z-index: 5999;
+  width: 20vw; /* Ajusta el tamaño del planeta */
+  height: auto; /* Mantiene la proporción */
+  scale: 1.9;
+  animation: float 6s ease-in-out infinite; /* Aplica solo la animación de flotación */
+}

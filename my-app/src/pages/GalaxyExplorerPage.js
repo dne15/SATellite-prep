@@ -8,9 +8,13 @@ function GalaxyExplorerPage() {
       navigate('/planetexplorer');
     }, 1000); // Delay navigation by 1 second (1000 milliseconds)
   };
+  const handleBackClick = () => {
+    navigate('/missioncontrol'); // Go back to the previous page
+  };
+
   return (
     <div className="galaxy-explorer-page">
-      <div className="back-symbol">{'<'}</div> {/* Adding the back symbol */}
+     <div className="back-symbol" onClick={handleBackClick}>{'<'}</div>
       <h1 className="title"> Galaxy Explorer</h1>
       <img className="galaxy-background" src="/main-space.png" alt="Galaxy" />
       <div className="galaxy-container">
