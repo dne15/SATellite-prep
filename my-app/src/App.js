@@ -22,20 +22,18 @@ function App() {
   );
 }
 
-
-
-
 function HomePage() {
   return (
     <div className="appcontainer">
+      <Link to="/missioncontrol">
       <div className="Skyandtext">
-        <Link to="/missioncontrol">
+                
           <img
             className="background"
             src="/background.png"
             alt="Sky background"
           />
-        </Link>
+        
       </div>
 
       {/* Cohete y bolas de humo */}
@@ -54,6 +52,7 @@ function HomePage() {
           </div>
         </div>
       </div>
+      </Link>
     </div>
   );
 }

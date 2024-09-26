@@ -16,8 +16,13 @@ function TheRomansPage() {
     navigate(`/chatbot?message=${encodeURIComponent(message)}`);
   };
 
+  const handleBackClick = () => {
+    navigate(-1); // Go back to the previous page
+  };
+
   return (
 <div className="the-romans-page">
+<div className="back-symbol" onClick={handleBackClick}>{'<'}</div>
       <h1>The Romans</h1>
       <p>Take off into Roman history! Discover their incredible inventions, legendary battles, and what life was like for Roman children. 
       Get ready for a cosmic adventure through time!</p>
