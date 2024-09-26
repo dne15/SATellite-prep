@@ -18,7 +18,7 @@ function TheRomansPage() {
 
   return (
 <div className="the-romans-page">
-      <h1>The Romans</h1>
+      <h1>The Roman</h1>
       <p>Take off into Roman history! Discover their incredible inventions, legendary battles, and what life was like for Roman children. 
       Get ready for a cosmic adventure through time!</p>
       <div className="video-container">

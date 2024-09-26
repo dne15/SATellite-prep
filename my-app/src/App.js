@@ -4,6 +4,7 @@ import "./App.css";
 import MissionControlPage from "./pages/MissionControlPage";
 import TheRomansPage from "./pages/TheRomansPage";
 import ChatBotPage from "./pages/ChatBotPage";
+import GalaxyExplorerPage from "./pages/GalaxyExplorerPage";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/missioncontrol" element={<MissionControlPage />} />
         <Route path="/theromanspage" element={<TheRomansPage />} />
         <Route path="/chatbot" element={<ChatBotPage />} />
+        <Route path="/galaxyexplorer" element={<GalaxyExplorerPage />} />
       </Routes>
     </Router>
   );
@@ -20,7 +22,7 @@ function App() {
 
 function HomePage() {
   return (
-    <div className="container">
+    <div className="appcontainer">
       <div className="Skyandtext">
         <Link to="/missioncontrol">
           <img
