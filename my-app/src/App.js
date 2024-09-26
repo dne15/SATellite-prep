@@ -5,6 +5,7 @@ import MissionControlPage from "./pages/MissionControlPage";
 import TheRomansPage from "./pages/TheRomansPage";
 import ChatBotPage from "./pages/ChatBotPage";
 import GalaxyExplorerPage from "./pages/GalaxyExplorerPage";
+import PlanetExplorerPage from "./pages/PlanetExplorerPage";
 
 function App() {
   return (
@@ -15,10 +16,14 @@ function App() {
         <Route path="/theromanspage" element={<TheRomansPage />} />
         <Route path="/chatbot" element={<ChatBotPage />} />
         <Route path="/galaxyexplorer" element={<GalaxyExplorerPage />} />
+        <Route path="/planetexplorer" element={<PlanetExplorerPage />} />
       </Routes>
     </Router>
   );
 }
+
+
+
 
 function HomePage() {
   return (

@@ -4,7 +4,7 @@ import './GalaxyExplorerPage.css'; // Assuming you'll create this CSS file
 function GalaxyExplorerPage() {
   const navigate = useNavigate(); // Create a navigate function
   const handleHistoryPlanetClick = () => {
-    navigate('/planet-explorer');
+    navigate('/planetexplorer');
   };
   return (
     <div className="galaxy-explorer-page">
