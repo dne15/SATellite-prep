@@ -26,11 +26,12 @@ body {
 
 .the-romans-page .back-symbol {
   position: absolute;
-  top: px;
+  top: 51px;
   left: 20px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: rgb(255, 255, 255);
   z-index: 10;
+  font-family: "Orbitron", sans-serif;
 }
 
 video {
@@ -45,6 +46,7 @@ p {
   text-align: center;
   font-family: "Exo", sans-serif;
   letter-spacing: 0.28px;
+  line-height: 30px;
 }
 
 h1 {
@@ -88,7 +90,7 @@ h1 {
   box-shadow: none;
   background: #EEEAFF;
 color: #2F4090;
-padding: 0.8em 0.8em 0.8e
+padding: 0.8em 0.8em 0.8em 0.8em;
 }
 
 .submitButton {
@@ -98,7 +100,7 @@ padding: 0.8em 0.8em 0.8e
   text-align: center;
   background-color: #3B4898;
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
   font-family: "Exo", sans-serif;
   left: 0.1rem;
   top: 0.01rem;
@@ -114,3 +116,8 @@ padding: 0.8em 0.8em 0.8e
   bottom: -70px; /* Move the image 50px below the viewport */
 }
 
+.RomansTitle {
+  margin: 0.7em 0 0 0 ;
+  font-size: 32px;
+
+}

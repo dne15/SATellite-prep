@@ -30,10 +30,11 @@ html {
   height: auto;
   border: 5px solid #2cf1ff;
   border-radius: 50px;
-  padding: 1em 2em;
+  padding: 1em 1em 1em 3em;
   color: #ffffff;
   background: #1d1e30;
   margin: 2em 0em;
+  align-self: center;
 }
 
 .input-row input {
@@ -64,7 +65,7 @@ button {
   /* top: 0.5em;
     right: 20em;
     top: 6.5em; */
-  height: 2em;
+  height: 5em;
   padding: 0.7em;
   top: 1.5em;
   transform: rotate(270deg);
