@@ -2,24 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;700&display=swap');
 
 body {
-  width: 100%; /* Ensure the element takes the full width */
-  height: 100%; /* Ensure the element takes the full height of the viewport */    
+  margin: 0;
+  height: 100%;
+}
+
+.the-romans-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
   background-image: url('../../public/romansbackground.png'); /* Path to the image */
   background-size: cover; /* Ensure the image covers the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   color: #FFFFFF;
   font-family: "Exo", sans-serif;
-}
 
-.the-romans-page {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+
+  overflow: auto;
+
 }
 
 video {

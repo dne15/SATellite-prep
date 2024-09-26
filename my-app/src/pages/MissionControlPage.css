@@ -1,63 +1,68 @@
-body {
+.fullImage {
+  position: fixed; /* Fija la imagen en el fondo */
+  top: 0; /* Ajusta la posición superior */
+  left: 0; /* Ajusta la posición izquierda */
+  width: 100vw; /* Ancho del 100% de la vista */
+  height: 100vh; /* Alto del 100% de la vista */
+  object-fit: fill;
+}
+/* body {
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "Orbitron", sans-serif;
+  background-color: #C0CADA;
 }
-
 .mission-control {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #c0cada;
+  background-color: #C0CADA;
   height: 100vh;
   position: relative;
+  top: 8em;
 }
-
 .header {
   text-align: center;
   z-index: 2;
-  color: #4d4e4e;
+  color: #4D4E4E;
   font-weight: bold;
 }
-
-/* .ControlBackground {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-} */
-
 .window {
-  z-index: 2; 
+  z-index: 2;
 }
-
-.button-row {
-  position: absolute;
-  top: 47%;  
-  left: 5%; 
-  display: flex;
-  align-items: center;
-  z-index: 2; 
-}
-
-.ControlButton {
-  width: 60px;
-  height: 80px;
-  margin-right: 10px;
-}
-
 .button-text2 {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #2d2f31;
-
+  color: #2D2F31;
+  position: relative;
+  bottom: 2.5em;
 }
-
 .ControlArrow {
+  position: relative;
   margin-left: 10px;
   margin-right: 10px;
+  align-self: center;
+  justify-self: center;
+  top: 1em;
 }
+.ControlBackground{
+  position: absolute;
+  object-fit: fill;
+  max-width: 90%;
+  padding: 1em;
+}
+.buttonsandletters{
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  top: 8em;
+  scale: 0.9;
+  right: 2em;
+}
+.buttonss{
+  align-self: center;
+  justify-self: center;
+} */
