@@ -2,16 +2,21 @@ import React, { useState, useEffect } from "react";
 import "./ChatBotPage.css";
 import { Mistral } from "@mistralai/mistralai";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 const apiKey =
   process.env.MISTRAL_API_KEY || "Q9wYLD8kvpWmXkYdpeDYGjpwfEbvAxOV";
 const client = new Mistral({ apiKey: apiKey });
 
 function ChatBotPage() {
+  const navigate = useNavigate();
   const [response, setResponse] = useState(""); // State for chat response
   const [userInput, setUserInput] = useState(""); // State for user input
   const location = useLocation();
 
+const handleBackClick = () => {
+  navigate('/missioncontrol'); // Go back to the previous page
+};
   // Function to get query parameters from the URL
   const getQueryParams = (search) => {
     return new URLSearchParams(search);
@@ -22,6 +27,7 @@ function ChatBotPage() {
     const message = queryParams.get("message");
     if (message) {
       setUserInput(message);
+      handleSubmit(); // Automatically submit the message
     }
   }, [location.search]);
 
@@ -32,7 +38,7 @@ function ChatBotPage() {
 
   // Handles form submission and fetches chatbot response
   const handleSubmit = async (event) => {
-    event.preventDefault(); // Prevents page reload on form submit
+    if (event) event.preventDefault(); // Prevents page reload on form submit
     try {
       // Call the chat API with the user's input
       const chatResponse = await client.chat.complete({
@@ -64,7 +70,7 @@ Sentence without Bionic Text: Learning is a continuous process that helps us gro
   return (
     <div className="chatbot-container">
       <div className="logo-row">
-        <img className="logoimage" src="/header.png" alt="header" />
+        <img className="logoimage" src="/header.png" alt="header" onClick={handleBackClick}/>
       </div>
       <div className="response-box">
         {response ? (

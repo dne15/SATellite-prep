@@ -38,7 +38,7 @@ html {
 
 .input-row input {
   /* position: relative; */
-  width: 50%;
+  width: 70%;
   padding: 1em 0.8em 1em;
   background: #eeeaff;
   border: 5px solid #a291d5;
@@ -64,9 +64,9 @@ button {
   /* top: 0.5em;
     right: 20em;
     top: 6.5em; */
-  height: 4em;
+  height: 2em;
   padding: 0.7em;
-  top: 2em;
+  top: 1.5em;
   transform: rotate(270deg);
 }
 .logoimage {

@@ -25,6 +25,15 @@ body {
 
 }
 
+.the-romans-page .back-symbol {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  z-index: 10;
+}
+
 video {
   height: auto;
   border-radius: 20px;
@@ -36,6 +45,7 @@ p {
   width: 80%;
   text-align: center;
   font-family: "Exo", sans-serif;
+  letter-spacing: 0.28px;
 }
 
 h1 {
@@ -69,7 +79,7 @@ h1 {
   font-size: 1rem;
   font-family: "Exo", sans-serif ;
   position: relative;
-  width: 50%;
+  width: 70%;
   padding: 1em 0.8em 1em;
   background: #1D1E30;
   border: 5px solid #A291D5;
@@ -78,6 +88,9 @@ h1 {
   color: #7D91B4;
   font-size: 1.2em;
   box-shadow: none;
+  background: #EEEAFF;
+color: #2F4090;
+padding: 0.8em 0.8em 0.8e
 }
 
 .submitButton {
