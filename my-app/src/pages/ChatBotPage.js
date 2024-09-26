@@ -1,15 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ChatBotPage.css';
 import { Mistral } from '@mistralai/mistralai';
+import { useLocation } from 'react-router-dom';
+
 const apiKey = process.env.MISTRAL_API_KEY || 'Q9wYLD8kvpWmXkYdpeDYGjpwfEbvAxOV';
 const client = new Mistral({ apiKey: apiKey });
-function App() {
+
+function ChatBotPage() {
   const [response, setResponse] = useState(""); // State for chat response
-  const [userInput, setUserInput] = useState("Hi there!"); // State for user input
+  const [userInput, setUserInput] = useState(""); // State for user input
+  const location = useLocation();
+
+  // Function to get query parameters from the URL
+  const getQueryParams = (search) => {
+    return new URLSearchParams(search);
+  };
+
+  useEffect(() => {
+    const queryParams = getQueryParams(location.search);
+    const message = queryParams.get('message');
+    if (message) {
+      setUserInput(message);
+    }
+  }, [location.search]);
+
   // Handles user input changes
   function handleChange(event) {
     setUserInput(event.target.value);
   }
+
   // Handles form submission and fetches chatbot response
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevents page reload on form submit
@@ -37,6 +56,7 @@ function App() {
       setResponse("Sorry, something went wrong.");
     }
   };
+
   return (
     <div className="container">
       <div className="logo-row">
@@ -65,4 +85,5 @@ function App() {
     </div>
   );
 }
-export default App;
+
+export default ChatBotPage;

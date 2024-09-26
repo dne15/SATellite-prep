@@ -5,10 +5,10 @@ body, html {
   }
   .container {
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-rows: 30% 40% 30%;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -19,6 +19,7 @@ body, html {
     padding: 10em 2em 6em 2em;
     height: auto;
   }
+  
   .response-box{
     height: auto;
     border: 5px solid #2CF1FF;
@@ -26,9 +27,10 @@ body, html {
     padding: 1em 2em;
     color: #7D91B4;
     background: #1D1E30;
+    margin: 2em 0em;
   }
   .input-row input {
-    position: relative;
+    /* position: relative; */
     width: 50%;
     padding: 1em 0.8em 1em;
     background: #1D1E30;
@@ -40,7 +42,7 @@ body, html {
     box-shadow: none;
   }
   button {
-    position: relative;
+    /* position: relative; */
     bottom: 5.1em;
     left: 13.5em;
     background-color: transparent;
@@ -51,12 +53,14 @@ body, html {
     outline: none;
   }
   .button img {
-    position: relative;
+    /* position: relative; */
     top: 0.5em;
     right: 20em;
     top: 6.5em;
     height: 4em;
   }
   .logoimage{
+    display: flex;
     height: 20em;
+    margin: 0.5em 0em;
   }
