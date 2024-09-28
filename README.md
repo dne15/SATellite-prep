@@ -100,3 +100,9 @@ Even with disagreements, we **Disagree and Commit**! Here's how we manage confli
 ---
 
 ✨ **Let's make "The Visualisers" a force to be reckoned with—creating visually stunning, user-centric digital experiences!** ✨
+
+Deployed Site: https://final-project-innovation-collective-qvax.vercel.app/galaxyexplorer
+FigJam Board: https://www.figma.com/board/GbYPKT4xw1JAuEn9p2l4S4/SATellite-Prep?node-id=282-425&node-type=text&t=W38yXQQyd9uvMmUH-0
+Presentation: https://docs.google.com/presentation/d/1GGP7dhOUl59MEMnXsuCnpMPfQDQjFmraMTLhCEDPULI/edit#slide=id.g3061f491eba_0_22
+
+
