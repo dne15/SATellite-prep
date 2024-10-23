@@ -6,6 +6,8 @@
 
 ---
 
+To run: cd into my-app, npm run start
+
 ## 👥 Members and Skills
 
 | Name    | Role                       | Skills                                |
